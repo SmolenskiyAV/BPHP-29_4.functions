@@ -150,34 +150,6 @@ do {
         totalListPrint($items);
 
         echo 'Выберите операцию для выполнения: ' . PHP_EOL;
-        /*
-        if ((count($items) !== 0) && (!array_key_exists(2, $operations))) {   // Проверить, есть ли товары в списке?
-            $tempVar2 = OPERATION_DELETE . '. Удалить товар из списка покупок.';
-            array_splice($operations, 2, 0, $tempVar2);
-        }
-
-        if ((count($items) === 0) && (array_key_exists(2, $operations))) {  // Если в списке нет товаров, то не отображать пункт про удаление товаров
-            unset($operations[2]);
-        }
-        // ----------------------------------
-        if ((count($items) !== 0) && (!array_key_exists(4, $operations))) {   // Проверить, есть ли товары в списке?
-            $tempVar4 = OPERATION_RENAME . '. Изменить название товара.';
-            array_splice($operations, 4, 0, $tempVar4);
-        }
-
-        if ((count($items) === 0) && (array_key_exists(4, $operations))) {  // Если в списке нет товаров, то не отображать пункт про изменение имени товара
-            unset($operations[4]);
-        }
-       // ----------------------------------
-        if ((count($items) !== 0) && (!array_key_exists(5, $operations))) {   // Проверить, есть ли товары в списке?
-            $tempVar5 = OPERATION_ADDQUANTITY . '. Добавить количество товара.';
-            array_splice($operations, 5, 0, $tempVar5);
-        }
-
-        if ((count($items) === 0) && (array_key_exists(5, $operations))) {  // Если в списке нет товаров, то не отображать пункт про добавление количества товара
-            unset($operations[5]);
-        }
-       */
 
         menuCorrection ($items, $operations, 2);
         menuCorrection ($items, $operations, 4);
